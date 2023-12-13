@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Libre+Bodoni:wght@400;600;700&family=Nosifer&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,7 +49,7 @@ table {
 }
 
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Libre Bodoni", "Nosifer", "Creesper", Courier, monospace;
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -56,17 +57,23 @@ table {
   transition: 0.2s linear;
 }
 
-.container {
+body {
   background: linear-gradient(45deg, red, brown);
-  padding: 15px 9%;
-  padding-bottom: 100px;
 }
-.container__heading {
+
+.header__title {
   text-align: center;
+  padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 50px;
+  font-family: "Nosifer", sans-serif;
+}
+
+.container {
+  padding: 15px 9%;
+  padding-bottom: 100px;
 }
 .container__box-container {
   display: grid;
@@ -80,27 +87,52 @@ table {
   text-align: center;
   padding: 30px 20px;
   transition: box-shadow 0.2s linear, transform 0.2s linear;
+  max-height: 600px;
+  overflow: hidden;
 }
 .container__box-container__box__img {
   height: 250px;
+  transition: transform 0.3s ease;
 }
-.container__box-container__box__titre, .container__box-container__box__genre, .container__box-container__box__acteurs, .container__box-container__box__realisateur {
+.container__box-container__box__img {
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+.container__box-container__box__img:hover {
+  transform: scale(1.2);
+}
+.container__box-container__box__titre {
+  font-family: "Nosifer", "Creeser", sans-serif;
+  background: linear-gradient(45deg, red, brown);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 10px;
+}
+.container__box-container__box__genre, .container__box-container__box__acteurs, .container__box-container__box__realisateur {
   color: #444;
   font-size: 22px;
+  padding: 10px 0;
+}
+.container__box-container__box__realisateur {
+  color: #400;
+  font-size: 20px;
   padding: 10px 0;
 }
 .container__box-container__box__resume {
   color: #777;
   font-size: 15px;
   line-height: 1.8;
+  margin-top: 10px;
 }
 .container__box-container__box__btn {
   margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
-  background: #333;
+  background: #850606;
   color: #fff;
   border-radius: 5px;
   padding: 8px 25px;
+  text-decoration: none;
 }
 .container__box-container__box__btn:hover {
   letter-spacing: 1px;
