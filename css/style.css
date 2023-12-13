@@ -84,12 +84,12 @@ table {
 .container__box-container__box__img {
   height: 250px;
 }
-.container__box-container__box__titre, .container__box-container__box__genre, .container__box-container__box__acteurs, .container__box-container__box__infos .container__box-container__box__real {
+.container__box-container__box__titre, .container__box-container__box__genre, .container__box-container__box__acteurs, .container__box-container__box__realisateur {
   color: #444;
   font-size: 22px;
   padding: 10px 0;
 }
-.container__box-container__box__p {
+.container__box-container__box__resume {
   color: #777;
   font-size: 15px;
   line-height: 1.8;

@@ -44,14 +44,13 @@
             &__titre,
             &__genre,
             &__acteurs,
-            &__infos
-            &__real {
+            &__realisateur {
                 color: #444;
                 font-size: 22px;
                 padding: 10px 0;
             }
 
-            &__p {
+            &__resume {
                 color: #777;
                 font-size: 15px;
                 line-height: 1.8;
@@ -75,7 +74,7 @@
                 transform: scale(1.03);
             }
         }
-        
+
         @media (max-width: 1024px) {
             grid-template-columns: auto auto;
         }
