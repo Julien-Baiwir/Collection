@@ -131,14 +131,25 @@ for (let elem of films) {
     // h4 for Realisateur
     let h4 = document.createElement('h4');
     h4.className = 'container__box-container__box__realisateur';
-    h4.innerHTML = "<span>réalisateur</span> " + elem.Realisateur;
+    h4.innerHTML = "réalisateur" + elem.Realisateur;
 
     // Anchor
     let a = document.createElement('a');
     a.className = 'container__box-container__box__btn';
     a.textContent = 'Bande annonce';
     a.href = elem.Trailer; 
+    
+    let button = document.createElement('button');
+    button.textContent ='';
+    button.className = 'container__box-container__box__delete';
+    
+    button.addEventListener('click', 
+    function () {
+        section.removeChild(div); 
+        films.splice(index, 1); }
+    );
 
+    div.appendChild(button);
     div.appendChild(img);
     div.appendChild(h2);
     div.appendChild(p);
@@ -160,7 +171,7 @@ let header = document.querySelector('.start');
     // Image img for img
     let img = document.createElement('img');
     img.className = 'start__header__img';
-    img.setAttribute('src', 'images/icon-zombie.png');
+    img.setAttribute('src','images/icon-zombie.png');
     img.setAttribute('alt', 'icon');
 
     // h1 for Title

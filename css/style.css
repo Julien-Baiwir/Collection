@@ -239,4 +239,23 @@ body {
 .container__box-container__box:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1.03);
+}
+.container__box-container__box__delete {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(133, 6, 6, 0.7);
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 95%;
+  transform: translateX(-50%);
+}
+@media (max-width: 375px) {
+  .container__box-container__box__delete {
+    width: 4px;
+    height: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -9,8 +9,6 @@
 * {
   font-family: "Libre Bodoni", "Nosifer", "Creesper", Courier, monospace;
   box-sizing: border-box;
-//   outline: none;
-//   border: none;
   text-transform: capitalize;
   transition: 0.2s linear;
 }
@@ -21,51 +19,52 @@ body {
 
 // -------TITRE
 .start__header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
-    &__img {
-        filter: invert(1);
-        transition: filter 0.3s ease;
+  &__img {
+    filter: invert(1);
+    transition: filter 0.3s ease;
 
-        &:hover {
-            transform: scale(1.2);
-        }
-
-        @include responsiveGrid("1124px") {
-            height:80px;
-        }
-        @include responsiveGrid("900px") {
-            display: none;
-        }
-        
+    &:hover {
+      transform: scale(1.2);
     }
 
-    &__title {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #fff;
-        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        font-size: 50px;
-        font-family: "Nosifer", sans-serif;
-
-        @include responsiveGrid("1124px") {
-            font-size: 45px;
-        }
-        @include responsiveGrid("1000px") {
-            font-size: 40px;
-        }
-        @include responsiveGrid("820px") {
-            font-size: 35px;
-        }
-        @include responsiveGrid("628px") {
-            font-size: 30px;
-        }
-        @include responsiveGrid("470px") {
-            font-size: 25px;
-          }
+    @include responsiveGrid("1124px") {
+      height: 80px;
     }
+    @include responsiveGrid("900px") {
+      display: none;
+    }
+  }
+
+  &__title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 50px;
+    font-family: "Nosifer", sans-serif;
+
+    // Ici il faut tester la méthode VH et voir CLAMP
+
+    @include responsiveGrid("1124px") {
+      font-size: 45px;
+    }
+    @include responsiveGrid("1000px") {
+      font-size: 40px;
+    }
+    @include responsiveGrid("820px") {
+      font-size: 35px;
+    }
+    @include responsiveGrid("628px") {
+      font-size: 30px;
+    }
+    @include responsiveGrid("470px") {
+      font-size: 25px;
+    }
+  }
 }
 
 // ---------- MAIN
@@ -102,8 +101,8 @@ body {
           transform: scale(1.2);
         }
         @include responsiveGrid("625px") {
-            height: 55%;
-          }
+          height: 55%;
+        }
       }
 
       &__titre {
@@ -121,13 +120,13 @@ body {
         padding: 10px 0;
       }
 
-      &__acteurs{
+      &__acteurs {
         color: #444;
         font-size: 20px;
         padding: 10px 0;
         @include responsiveGrid("625px") {
-            margin-bottom: 8%;
-          }          
+          margin-bottom: 8%;
+        }
       }
 
       &__realisateur {
@@ -135,13 +134,13 @@ body {
         font-size: 18px;
         padding: 10px 0;
         margin-bottom: 14%;
-        
+
         @include responsiveGrid("725px") {
-            font-size: 18px;
-          }
+          font-size: 18px;
+        }
         @include responsiveGrid("625px") {
-            display: none;
-          }
+          display: none;
+        }
       }
 
       &__resume {
@@ -155,10 +154,10 @@ body {
         max-height: 7.2em;
         text-overflow: ellipsis;
         margin-top: 5px;
-        
+
         @include responsiveGrid("380px") {
-            font-size: 13px;
-          }
+          font-size: 13px;
+        }
       }
 
       &__btn {
@@ -177,17 +176,35 @@ body {
           letter-spacing: 1px;
         }
         @include responsiveGrid("725px") {
-            padding: 1.45% 2.5%;
-          }
+          padding: 1.45% 2.5%;
+        }
         @include responsiveGrid("682px") {
-            padding: 1.35% 2.35%;
-          }
-        
+          padding: 1.35% 2.35%;
+        }
       }
 
       &:hover {
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
         transform: scale(1.03);
+      }
+
+      &__delete {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(133, 6, 6, 0.7);
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: 95%;
+        transform: translateX(-50%);
+
+        @include responsiveGrid("375px") {
+          width: 4px;
+          height: 6px;
+        }
       }
     }
   }
