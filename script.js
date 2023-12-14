@@ -5,7 +5,7 @@ let films = [
         Titre: "Zombies",
         Resume: "Quand le monde est en ruine, ravagé par une épidémie de zombies, Luke et son équipe auront-ils assez de force et de munitions?",
         Acteurs: ["Tony Todd", "Steven Luke", "Raina Hein"],
-        Realisateur: "Hamid Torabpour",
+        Realisateur: " Hamid Torabpour",
         Trailer: "https://www.imdb.com/title/tt4969672/"
     },
     {
@@ -13,13 +13,13 @@ let films = [
         Titre: "Corona Zombies",
         Resume: "Des demoiselles étourdies en détresse, une famine de papier toilette, des médias de masse déchaînés et un virus infernal!",
         Acteurs: ["Cody Renee", "Russell Coker", "Robin Sydney"],
-        Realisateur: "Charles Band",
+        Realisateur: " Charles Band",
         Trailer: "https://www.imdb.com/title/tt12098392/?ref_=fn_al_tt_1"
     },
 
     {
         Image: "images/3bigfoot-vs-zombies.jpg",
-        Titre: "Bigfoot contre Zombies",
+        Titre: " Bigfoot contre Zombies",
         Resume: "Un scientifique crée un cocktail toxique qui est accidentellement libéré dans la population locale et dans une ferme de corps de la police",
         Acteurs: ["James Carolus", "Todd Carpenter", "Bob Dennis"],
         Realisateur: "Mark Polonia",
@@ -30,7 +30,7 @@ let films = [
         Titre: "L'Ascension des Zombies",
         Resume: "Lorsque les morts-vivants envahissent San Francisco, un groupe désespéré survit en se retranchant dans la prison d'Alcatraz.",
         Acteurs: ["Ethan Suplee", "Mariel Hemingway", "LeVar Burton"],
-        Realisateur: "Nick Lyon",
+        Realisateur: " Nick Lyon",
         Trailer: "https://www.imdb.com/title/tt2236182/?ref_=fn_al_tt_1"
     },
     {
@@ -38,7 +38,7 @@ let films = [
         Titre: "Abraham Lincoln contre les Zombies",
         Resume: "Le jeune Abe Lincoln de 10 ans voit son père Thomas Lincoln  se suicider à ses côtés. Il va tous les tuer seul... contre tous.",
         Acteurs: ["Bill Oberst Jr", "Kent Igleheart", "Rhianna Van Helton"],
-        Realisateur: "Richard Schenkman",
+        Realisateur: " Richard Schenkman",
         Trailer: "https://www.imdb.com/title/tt2246549/?ref_=fn_al_tt_1"
     },
     {
@@ -46,7 +46,7 @@ let films = [
         Titre: "Navy Seals contre Zombies",
         Resume: "Les Navy SEALS contre une énorme armée de zombies. Que feront-ils pour survivre, sauver leur ville et libérer les zombies de cette zone ?",
         Acteurs: ["Stephanie Honoré", "Molly Hagan", "Ed Quinn"],
-        Realisateur: "Stanton Barrett",
+        Realisateur: " Stanton Barrett",
         Trailer: "https://www.imdb.com/title/tt4511566/?ref_=fn_al_tt_1"
     },
     {
@@ -54,7 +54,7 @@ let films = [
         Titre: "Cowboy Zombies",
         Resume: "La civilisation a été ravagée par une guerre nucléaire et les morts-vivants se sont levés pour attaquer ce qu'il reste de l'humanité. ",
         Acteurs: ["Jarod Anderson", "Greg Bronson", "Kiera Crouch"],
-        Realisateur: "Paul Winters",
+        Realisateur: " Paul Winters",
         Trailer: "https://www.imdb.com/title/tt2888068/?ref_=fn_al_tt_1"
     },
     {
@@ -62,7 +62,7 @@ let films = [
         Titre: "Humains contre Zombies",
         Resume: " Les étudiants en été sont exposés à un virus mortel qui se propage rapidement par contact humain direct.",
         Acteurs: ["Christine Bently", "Cody Callahan", "David Blackwell"],
-        Realisateur: "Brian T Jaynes",
+        Realisateur: " Brian T Jaynes",
         Trailer: "https://www.imdb.com/title/tt1815746/?ref_=fn_al_tt_1"
     },
     {
@@ -70,7 +70,7 @@ let films = [
         Titre: "Les Zombies Sont Tombés",
         Resume: "Le film raconte l'histoire de Kyra (Tansy Parkinson), qui possède des pouvoirs surnaturels et des visions d'une apocalypse à venir",
         Acteurs: ["Finn H Drude", "Tony Gardner", "Heath Hampson"],
-        Realisateur: "Sam Hampson",
+        Realisateur: " Sam Hampson",
         Trailer: "https://www.imdb.com/title/tt4974254/?ref_=fn_al_tt_1"
     },
     {
@@ -78,7 +78,7 @@ let films = [
         Titre: "Les Zombies font du ski",
         Resume: " Action zombie dans les Alpes : un groupe de jeunes snowboarders est coincé dans une station de ski de montagne isolée...",
         Acteurs: ["Gabriela Marcinková", "Laurie Calvert", "Patricia Aulitzky"],
-        Realisateur: "David F Mendez",
+        Realisateur: " David F Mendez",
         Trailer: "https://www.imdb.com/title/tt3569970/?ref_=fn_al_tt_1"
     },
     {
@@ -86,7 +86,7 @@ let films = [
         Titre: "Lowriders contre les Zombies de l'Espace",
         Resume: " Une étrange substance extraterrestre est introduite, transformant les gens en zombies extraterrestres, qui va les arrêter?",
         Acteurs: ["Michael Cristian", "Katusha Robert", "Cristina Cruz Rodríguez"],
-        Realisateur: "David F Mendez",
+        Realisateur: " David F Mendez",
         Trailer: "https://www.imdb.com/title/tt7118702/?ref_=fn_al_tt_1"
     },
     {
@@ -94,7 +94,7 @@ let films = [
         Titre: "L'Attaque des Zombies du Sud Croustillant",
         Resume: "Un pilote d'avion de traitement, qui doit diriger un groupe hétéroclite de survivants pour échapper à la horde de zombies mortelle",
         Acteurs: ["Miles Doleac", "Michael Emery", "Jeremy Sande"],
-        Realisateur: "Mark Newton",
+        Realisateur: " Mark Newton",
         Trailer: "https://www.imdb.com/title/tt5594444/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Attack%2520of%2520the%2520Southern%2520Fried%2520Zombies"
     }
 ];
