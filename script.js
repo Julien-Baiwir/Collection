@@ -1,4 +1,5 @@
-let object = [
+// Collection zombies films--------------------
+let films = [
     {
         Image: "../images/1zombies.jpg",
         Titre: "Zombies",
@@ -97,10 +98,11 @@ let object = [
         Trailer: "https://www.imdb.com/title/tt5594444/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Attack%2520of%2520the%2520Southern%2520Fried%2520Zombies"
     }
 ];
+// Main--------------------
 
 let section = document.querySelector('.container__box-container');
 
-for (let elem of object) {
+for (let elem of films) {
     // Create new section
     let div = document.createElement('div');
     div.className = 'container__box-container__box';
@@ -146,4 +148,27 @@ for (let elem of object) {
     section.appendChild(div);
 }
 
-// Titre de la page-----
+
+// Header--------------------
+
+let header = document.querySelector('.start');
+
+    // Create new div
+    let div = document.createElement('div');
+    div.className = 'start__header';
+
+    // Image img for img
+    let img = document.createElement('img');
+    img.className = 'start__header__img';
+    img.setAttribute('src', '../images/icon-zombie.png');
+    img.setAttribute('alt', 'icon');
+
+    // h1 for Title
+    let h1 = document.createElement('h1');
+    h1.className = 'start__header__title';
+    h1.innerHTML = "Les pires films de Zombies";
+
+    div.appendChild(img);
+    div.appendChild(h1);
+    header.appendChild(div);
+

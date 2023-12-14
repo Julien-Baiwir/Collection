@@ -1,21 +1,26 @@
-@import 'reset';
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Libre+Bodoni:wght@400;600;700&family=Nosifer&display=swap');
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Libre+Bodoni:wght@400;600;700&family=Nosifer&display=swap");
 
+@mixin responsiveGrid($device) {
+  @media (max-width: $device) {
+    @content;
+  }
+}
 * {
-    font-family: 'Libre Bodoni', 'Nosifer', 'Creesper', Courier, monospace;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: .2s linear;
+  font-family: "Libre Bodoni", "Nosifer", "Creesper", Courier, monospace;
+  box-sizing: border-box;
+  outline: none;
+//   border: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
 }
 
-body{
-    background: linear-gradient(45deg, red, brown);
-
+body {
+  background: linear-gradient(45deg, red, brown);
 }
 
-.header {
+// -------TITRE
+.start__header {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -23,139 +28,168 @@ body{
     &__img {
         filter: invert(1);
         transition: filter 0.3s ease;
-        padding-right:0.5%;
 
         &:hover {
             transform: scale(1.2);
         }
+
+        @include responsiveGrid("1124px") {
+            height:80px;
+        }
+        @include responsiveGrid("900px") {
+            display: none;
+        }
+        
     }
 
     &__title {
         padding-top: 15px;
         padding-bottom: 15px;
         color: #fff;
-        text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         font-size: 50px;
-        font-family: 'Nosifer', sans-serif;
+        font-family: "Nosifer", sans-serif;
+
+        @include responsiveGrid("1124px") {
+            font-size: 45px;
+        }
+        @include responsiveGrid("1000px") {
+            font-size: 40px;
+        }
+        @include responsiveGrid("820px") {
+            font-size: 35px;
+        }
+        @include responsiveGrid("628px") {
+            font-size: 30px;
+        }
+        @include responsiveGrid("470px") {
+            font-size: 25px;
+          }
     }
 }
 
 
-
+// ---------- MAIN
 .container {
-    padding: 15px 9%;
-    padding-bottom: 100px;
+  padding: 15px 9%;
+  padding-bottom: 100px;
 
+  &__box-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
 
-    &__box-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 15px;
-
-      
-
-        &__box {
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-            border-radius: 5px;
-            background: #fff;
-            text-align: center;
-            padding: 15px 15px;
-            transition: box-shadow .2s linear, transform .2s linear;
-            position: relative;
-           
-
-
-            &__img {
-                height: 50%;
-                transition: transform 0.3s ease;
-                &:hover {
-                    transform: scale(1.2); 
-                }
-            }
-
-
-            &__titre {
-                font-family: 'Nosifer', 'Creeser', sans-serif;
-                background: linear-gradient(45deg, red, brown); 
-                -webkit-background-clip: text; 
-                -webkit-text-fill-color: transparent; 
-                padding-top:10px;
-                font-size: 18px;
-            }
-
-            &__genre,
-            &__acteurs,
-            &__realisateur {
-                color: #444;
-                font-size: 20px;
-                padding: 10px 0;
-            }
-
-            &__realisateur {
-                color: #400;
-                font-size: 18px;
-                padding: 10px 0;
-                margin-bottom:14%;
-            }
-
-            &__resume {
-                color: #777;
-                font-size: 15px;
-                line-height: 1.8;
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                max-height: 7.2em; 
-                text-overflow: ellipsis;
-                margin-top: 5px;
-            }
-
-            &__btn {
-                
-                display: inline-block;
-                background: #850606;
-                color: #fff;
-                border-radius: 5px;
-                padding: 2.5% 3.5%;
-                text-decoration: none;
-                position: absolute;
-                bottom: 15px; 
-                left: 50%; 
-                transform: translateX(-50%);
-
-                &:hover {
-                    letter-spacing: 1px;
-                }
-            }
-
-            &:hover {
-                box-shadow: 10px 10px 15px rgba(0, 0, 0, .2);
-                transform: scale(1.03);
-            }
-        }
-
-        @media (max-width: 1024px) {
-            grid-template-columns: auto auto;
-        }
-
-        @media (max-width: 375px) {
-            grid-template-columns: auto;
-        }
+    @include responsiveGrid("1024px") {
+      grid-template-columns: auto auto;
     }
+
+    @include responsiveGrid("625px") {
+      grid-template-columns: auto;
+    }
+
+    &__box {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      background: #fff;
+      text-align: center;
+      padding: 15px 15px;
+      transition: box-shadow 0.2s linear, transform 0.2s linear;
+      position: relative;
+
+      &__img {
+        height: 50%;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+        @include responsiveGrid("625px") {
+            height: 55%;
+          }
+      }
+
+      &__titre {
+        font-family: "Nosifer", "Creeser", sans-serif;
+        background: linear-gradient(45deg, red, brown);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 10px;
+        font-size: 18px;
+      }
+
+      &__genre,
+      &__acteurs,
+      &__realisateur {
+        color: #444;
+        font-size: 20px;
+        padding: 10px 0;
+      }
+      &__acteurs,{
+        
+        @include responsiveGrid("625px") {
+            margin-bottom: 8%;
+          }
+          
+      }
+
+      &__realisateur {
+        color: #400;
+        font-size: 18px;
+        padding: 10px 0;
+        margin-bottom: 14%;
+        
+        @include responsiveGrid("725px") {
+            font-size: 18px;
+          }
+        @include responsiveGrid("625px") {
+            display: none;
+          }
+      }
+
+      &__resume {
+        color: #777;
+        font-size: 15px;
+        line-height: 1.8;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 7.2em;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+        
+        @include responsiveGrid("380px") {
+            font-size: 13px;
+          }
+      }
+
+      &__btn {
+        display: inline-block;
+        background: #850606;
+        color: #fff;
+        border-radius: 5px;
+        padding: 2.5% 3.5%;
+        text-decoration: none;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover {
+          letter-spacing: 1px;
+        }
+        @include responsiveGrid("725px") {
+            padding: 1.45% 2.5%;
+          }
+        @include responsiveGrid("682px") {
+            padding: 1.35% 2.35%;
+          }
+        
+      }
+
+      &:hover {
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.03);
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
