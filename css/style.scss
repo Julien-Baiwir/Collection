@@ -9,7 +9,7 @@
 * {
   font-family: "Libre Bodoni", "Nosifer", "Creesper", Courier, monospace;
   box-sizing: border-box;
-  outline: none;
+//   outline: none;
 //   border: none;
   text-transform: capitalize;
   transition: 0.2s linear;
@@ -68,7 +68,6 @@ body {
     }
 }
 
-
 // ---------- MAIN
 .container {
   padding: 15px 9%;
@@ -116,19 +115,19 @@ body {
         font-size: 18px;
       }
 
-      &__genre,
-      &__acteurs,
-      &__realisateur {
+      &__genre {
         color: #444;
         font-size: 20px;
         padding: 10px 0;
       }
-      &__acteurs,{
-        
+
+      &__acteurs{
+        color: #444;
+        font-size: 20px;
+        padding: 10px 0;
         @include responsiveGrid("625px") {
             margin-bottom: 8%;
-          }
-          
+          }          
       }
 
       &__realisateur {

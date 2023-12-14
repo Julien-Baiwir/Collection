@@ -51,7 +51,6 @@ table {
 * {
   font-family: "Libre Bodoni", "Nosifer", "Creesper", Courier, monospace;
   box-sizing: border-box;
-  outline: none;
   text-transform: capitalize;
   transition: 0.2s linear;
 }
@@ -164,7 +163,12 @@ body {
   padding-top: 10px;
   font-size: 18px;
 }
-.container__box-container__box__genre, .container__box-container__box__acteurs, .container__box-container__box__realisateur {
+.container__box-container__box__genre {
+  color: #444;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.container__box-container__box__acteurs {
   color: #444;
   font-size: 20px;
   padding: 10px 0;
