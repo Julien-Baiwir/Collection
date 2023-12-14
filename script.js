@@ -98,6 +98,9 @@ let films = [
         Trailer: "https://www.imdb.com/title/tt5594444/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Attack%2520of%2520the%2520Southern%2520Fried%2520Zombies"
     }
 ];
+
+// ordre aléatoire--------------------
+// films.sort((a, b) => (a.Titre > b.Titre) ? 1 : ((b.Titre > a.Titre) ? -1 : 0));
 // Main--------------------
 
 let section = document.querySelector('.container__box-container');
@@ -184,4 +187,5 @@ let header = document.querySelector('.start');
     header.appendChild(div);
 
 // ordre aléatoire--------------------
-// films.sort((a, b) => (a.Genre > b.Genre) ? 1 : ((b.Genre > a.Genre) ? -1 : 0));
+
+
