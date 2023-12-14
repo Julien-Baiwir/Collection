@@ -131,7 +131,7 @@ for (let elem of films) {
     // h4 for Realisateur
     let h4 = document.createElement('h4');
     h4.className = 'container__box-container__box__realisateur';
-    h4.innerHTML = "réalisateur" + elem.Realisateur;
+    h4.innerHTML = "réalisateur " + elem.Realisateur;
 
     // Anchor
     let a = document.createElement('a');
@@ -183,3 +183,5 @@ let header = document.querySelector('.start');
     div.appendChild(h1);
     header.appendChild(div);
 
+// ordre aléatoire--------------------
+// films.sort((a, b) => (a.Genre > b.Genre) ? 1 : ((b.Genre > a.Genre) ? -1 : 0));
